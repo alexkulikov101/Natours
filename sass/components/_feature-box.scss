@@ -1,0 +1,42 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all 0.3s;
+
+  &::before {
+    content: '';
+    width: 7.2rem;
+    height: 7.2rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5.3rem;
+  }
+  &--icon-earth {
+    &::before {
+      background-image: url(../../img/icons/internet.svg);
+    }
+  }
+  &--icon-compass {
+    &::before {
+      background-image: url(../../img/icons/002-compass.svg);
+    }
+  }
+  &--icon-map {
+    &::before {
+      background-image: url(../../img/icons/003-pin.svg);
+    }
+  }
+  &--icon-heart {
+    &::before {
+      background-image: url(../../img/icons/004-heart.svg);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}
